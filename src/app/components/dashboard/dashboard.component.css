@@ -1,0 +1,19 @@
+.parent {
+    height:100vh;
+    width:100vw;
+    display:flex;
+
+}
+.left {
+    background-color: powderblue;
+    overflow: auto;
+    height:100% ;
+    width:25%
+}
+.right {
+    background-color: violet;
+    overflow: auto;
+    height:100%;
+    width:75%
+
+}

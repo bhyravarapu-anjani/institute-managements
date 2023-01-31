@@ -1,0 +1,18 @@
+<div class="parent">
+    <form [formGroup]="formData">
+        <label>email</label>
+        <input type="text" formControlName="email">
+
+        <div class="err" *ngIf="formData.get('email')?.touched && formData.get('email')?.invalid">
+            <p *ngIf="formData.get('email')?.errors?.['required']">*required</p>
+            <P *ngIf="formData.get('email')?.errors?.['minlength']">minimum 3 charcaters</P>
+        </div>
+        <br>
+        <label>password</label>
+        <input type="password" formControlName="password">
+        <br>
+        <div class="d-flex flex-row justify-content-center">
+            <button class="btn btn-info" (click)="Submit()">submit</button>
+        </div>
+    </form>
+</div>
