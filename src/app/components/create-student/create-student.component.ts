@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormControl, FormControlName, FormGroup } from '@angular/forms';
+import { FormArray, FormControl, FormControlName, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-create-student',
@@ -22,9 +22,31 @@ export class CreateStudentComponent {
           state:new FormControl(),
           pincode:new FormControl()
         }
-      )
+      ),
+      eduactions:new FormArray([]),
+      
 
     }
   )
 
+  get educationsFormArray(){
+    return this.formData.get('eduactions')as FormArray
+  }
+ add(){
+  this.educationsFormArray.push(
+    new FormGroup(
+      {
+        qualification:new FormControl(),
+        year:new FormControl(),
+        percentage:new FormControl()
+      }
+    )
+  )
+  
+ }
+ delete(i:number){
+  this.educationsFormArray.removeAt(i)
+ }
+
 }
+

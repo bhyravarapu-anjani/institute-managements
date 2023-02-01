@@ -8,6 +8,7 @@ form {
     background-color: white;
     border-radius: 8px;
     width:50%;
+    overflow: auto;
     
 }
   
@@ -19,4 +20,8 @@ label {
 input {
     margin-right: 10px;
     margin-top: 10px;
+}
+button{
+    margin-left:10px;
+    margin-bottom:5px;
 }
