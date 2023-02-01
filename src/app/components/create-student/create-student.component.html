@@ -1,1 +1,35 @@
-<p>create-student works!</p>
+<div class="parent d-flex justify-content-center">
+    <form [formGroup]="formData">
+        <label>name</label>
+        <input type="text" formControlName="name">
+        <br>
+        <label>gender</label>
+        <input type="text" formControlName="gender">
+        <br>
+        <label>mobile</label>
+        <input type="number" formControlName="mobile">
+        <br>
+        <label>email</label>
+        <input type="email" formControlName="email">
+        <br>
+        <label>batch</label>
+        <input type="number" formControlName="batch">
+        <div formGroupName="address">
+            <label>city</label>
+            <input type="text" formControlName="city">
+            <br>
+            <label>mandal</label>
+            <input type="text" formControlName="mandal">
+            <br>
+            <label>district</label>
+            <input type="text" formControlName="district">
+            <br>
+            <label>state</label>
+            <input type="text" formControlName="state">
+            <br>
+            <label>pincode</label>
+            <input type="text" formControlName="pincode">
+            <br>
+        </div>
+    </form>
+</div>

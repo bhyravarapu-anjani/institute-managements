@@ -1,0 +1,22 @@
+.parent {
+    height:100%;
+    width:75vw;
+    
+    
+}
+form {
+    background-color: white;
+    border-radius: 8px;
+    width:50%;
+    
+}
+  
+label {
+    width:100px;
+    color:red;
+    margin-left:10px;
+}
+input {
+    margin-right: 10px;
+    margin-top: 10px;
+}

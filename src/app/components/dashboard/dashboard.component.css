@@ -11,9 +11,10 @@
     width:25%
 }
 .right {
-    background-color: violet;
+    background-color: rebeccapurple;
     overflow: auto;
     height:100%;
-    width:75%
+    width:75%;
+    
 
 }
